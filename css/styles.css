@@ -197,6 +197,7 @@ main {
 
 .socialLogo {
   width: 25px;
+  height: auto;
 }
 
 .mapDiv {
@@ -225,7 +226,7 @@ main {
 /* ---------------------------------------------------------*/
 /* ABOUT US -------------------------------------------------- */
 .aboutBanner {
-  background-image: url(../assets/images/slide-01.jpg);
+  background-image: url(../assets/images/slide-01.webp);
   background-size: cover;
 }
 
@@ -233,6 +234,11 @@ main {
   max-width: -moz-fit-content;
   max-width: fit-content;
   max-height: 150px;
+}
+
+.whoWeAreSeccion img {
+  width: 100%; /* or max-width: 100%; */
+  height: auto;
 }
 
 /* END ABOUT US -------------------------------------------------- */
