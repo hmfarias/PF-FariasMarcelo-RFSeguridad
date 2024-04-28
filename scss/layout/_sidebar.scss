@@ -7,6 +7,7 @@
 	.logosSlide {
 		display: inline-block;
 		animation: 20s slide infinite linear;
+		animation-play-state: initial;
 
 		img {
 			height: 60px;
@@ -17,7 +18,7 @@
 	&::after {
 		position: absolute;
 		top: 0;
-		width: 250px;
+		width: 200px;
 		height: 100%;
 		content: '';
 		z-index: 2;
@@ -42,5 +43,12 @@
 /* para que no acomode los iconos en varios renglones*/
 .customerSlide {
 	white-space: nowrap;
+}
+/* para que la disolución de los logos no sea demasiado ancha en pantallas pequeñas */
+@media only screen and (max-width: 575px) {
+	.logosCustomers::before,
+	.logosCustomers::after {
+		width: 80px;
+	}
 }
 /*END SLIDEBAR -----------------------------*/
